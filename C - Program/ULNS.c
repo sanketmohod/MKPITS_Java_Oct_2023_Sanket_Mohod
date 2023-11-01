@@ -6,9 +6,9 @@ main()
     printf("enter the character : ");
     scanf("%c",&c);
     if(c>=65 && c<=90)
-    printf("Upper letter");
+    printf("Uppercase");
     else if(c>=97 && c<=122)
-    printf("Lower letter");
+    printf("Lowercase");
     else if(c>=45 && c<=57)
     printf("Numeric");
     else 
