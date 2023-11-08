@@ -6,7 +6,7 @@
     printf("enter the three angles :");
     scanf("%d%d%d",&a,&b,&c);
     total = a + b + c;
-    printf("total is %d",total);
+    printf("total is %d\n",total);
     if(total == 180){
         printf("all angles form a triengle");
     }else

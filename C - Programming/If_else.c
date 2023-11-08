@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-    int M:
+    int M;
     printf("enter the marks :");
     scanf("%d",&M);
     if(M>=50)

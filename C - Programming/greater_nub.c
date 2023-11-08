@@ -3,9 +3,9 @@
 main()
 {
     int a = 10,b = 12;
-    if(a>b);
+    if(a>b)
     printf("greater number is a");
     else
     printf("greater number is b");
-    return 0:
+    return 0;
 }
