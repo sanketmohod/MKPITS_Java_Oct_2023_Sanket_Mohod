@@ -4,3 +4,6 @@
 [submodule "Java_Project"]
 	path = Java_Project
 	url = https://github.com/sanketmohod/Java_Project.git
+[submodule "Java_Practice"]
+	path = Java_Practice
+	url = https://github.com/sanketmohod/Java_Practice.git
