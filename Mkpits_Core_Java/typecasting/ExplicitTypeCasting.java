@@ -21,6 +21,12 @@ public class ExplicitTypeCasting {
 		byte s1 = 15;
 		short s2 = (short)(s + s1); // Explicit - byte value  converted into the short type
 		System.out.println(s2);
+		int num1 = 45;
+		int num2 = 25;
+		int result = num1 + num2;
+		System.out.println(result);
+		byte b = (byte)result;     // integer to byte
+		System.out.println(b);
 	}
 
 }

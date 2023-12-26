@@ -1,4 +1,4 @@
-2package com.mkpits.opretors;
+package com.mkpits.opretors;
 
 public class AssignmentOperator {
 

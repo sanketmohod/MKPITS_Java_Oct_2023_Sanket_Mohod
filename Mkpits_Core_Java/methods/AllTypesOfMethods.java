@@ -1,10 +1,14 @@
 package com.mkpits.methods;
 
 public class AllTypesOfMethods {
+	static int vNumb = 15;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// we can directly call static method with no return type and no arguments
+		// TODO Auto-generated method stub	
+	   // we can directly call static method with no return type and no arguments
+		int vNumb = 10;
+		System.out.println(AllTypesOfMethods.vNumb);
+		System.out.println(vNumb);
          getMarks();	
         // To call non static method with return type it required object reference of class
         AllTypesOfMethods call = new AllTypesOfMethods();
