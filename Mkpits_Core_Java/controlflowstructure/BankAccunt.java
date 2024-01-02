@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 public class BankAccunt {
 	String name,gender;
+	String bankName = "Axis Bank";
 	long mobile,accountNumber;
 	int age;
 	float balance,deposite,withdraw;
@@ -44,6 +45,7 @@ public class BankAccunt {
 	}
 	private void createAccount() throws IOException {
 		// TODO Auto-generated method stub
+		
 		System.out.println("Enter your name : ");
 		name = br.readLine();
 		System.out.println("Enter your age : ");
@@ -52,7 +54,7 @@ public class BankAccunt {
 		mobile = Long.parseLong(br.readLine());
 		System.out.println("Enter your gender : ");
 		gender = br.readLine();
-		accountNumber = (long) Math.floor(Math.random() * 1000000000);
+		accountNumber = (long) Math.floor(Math.random() *(1000000000000l));
 	}
 	private void getDeposite() throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
@@ -78,6 +80,7 @@ public class BankAccunt {
 		System.out.println("Your age : "+age);
 		System.out.println("Your mobile number : "+mobile);
 		System.out.println("Your gender : "+gender);
+		System.out.println("Bank name : "+bankName);
 		System.out.println("Account number : "+accountNumber);
 		System.out.println("Your deposite : "+deposite);
 		System.out.println("Your withdraw : "+withdraw);
