@@ -24,7 +24,7 @@ public class SortingNumber {
         }
 		// Sorting in ascending order
 		System.out.println();
-		System.err.println("Sorting in ascending order : ");
+		System.out.println("Sorting in ascending order : ");
 
         for(int i=0;i<arr.length;i++) {
         	for(int j=i+1;j<arr.length;j++) {

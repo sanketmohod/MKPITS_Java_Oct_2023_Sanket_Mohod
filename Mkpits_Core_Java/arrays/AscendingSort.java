@@ -10,7 +10,7 @@ public class AscendingSort {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int arrNumber[] = new int[10];
+        int arrNumber[] = new int[10];// declaration of array
         System.out.println("Enter 10 elements of array : ");
         for(int i=0;i<arrNumber.length;i++) {
         	arrNumber[i] = Integer.parseInt(br.readLine());

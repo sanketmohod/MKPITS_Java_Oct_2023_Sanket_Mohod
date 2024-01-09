@@ -24,7 +24,7 @@ public class ProblemSolving1 {
         System.out.println();
 		System.out.println("Largest number of array is : "+largNumb);
 		int fact = 1;
-
+        
         for(int i=1;i<=largNumb;i++) {
         	fact = fact * i;
         }
