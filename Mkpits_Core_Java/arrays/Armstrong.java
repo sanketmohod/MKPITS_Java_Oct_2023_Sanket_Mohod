@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Armstrong {
-
+      // Armstrong number - the sum of cube of digit is equal to same number
+	  // eg. 123 - 1^3 + 2^3 + 3^3 = 1 + 8 + 27 = 36 - which is not Armstrong number
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
 		int module;

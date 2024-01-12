@@ -11,7 +11,7 @@ public class UserInput {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enten the name : ");
         String name = br.readLine();
-        System.err.println("My name is : "+name);
+        System.out.println("My name is : "+name);
         System.out.println("Enter your Roll Number : ");
         int rollNumb = Integer.parseInt(br.readLine());
         System.out.println("My roll number is : "+rollNumb);
