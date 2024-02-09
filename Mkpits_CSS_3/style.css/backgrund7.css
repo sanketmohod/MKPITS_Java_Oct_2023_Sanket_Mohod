@@ -1,0 +1,24 @@
+h2{
+text-align: center;
+font-size: large;
+font-style: normal;
+color: #df6565;
+}
+
+body{
+background-color: rgb(166, 200, 200);
+padding: auto;
+padding-left: 3%;
+padding-right: 3%;
+background-image: url(/image/bike3.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: scroll;
+background-attachment: fixed;
+background-size: auto;
+background-size: contain;
+background-size: cover;
+background-origin: border-box;
+background-origin: content-box;
+background-origin: padding-box;
+}

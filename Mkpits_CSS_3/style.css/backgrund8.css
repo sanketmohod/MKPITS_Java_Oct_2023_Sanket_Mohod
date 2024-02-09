@@ -1,0 +1,36 @@
+h2{
+text-align: center;
+font-size: large;
+font-style: normal;
+color: #271c9e;
+}
+
+body{
+background-color: rgb(166, 200, 200);
+padding: auto;
+padding-left: 3%;
+padding-right: 3%;
+background-image: url(/image/bike1.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: scroll;
+background-attachment: fixed;
+background-size: auto;
+background-size: contain;
+background-size: cover;
+background-origin: border-box;
+background-origin: content-box;
+background-origin: padding-box;
+
+}
+
+
+#clip{
+    border: 10px dotted white;
+    padding: 0cm;
+    background: fixed rgb(82, 82, 136);
+    background-clip:padding-box;
+    background-clip: border-box;
+    background-clip: content-box;
+    
+}

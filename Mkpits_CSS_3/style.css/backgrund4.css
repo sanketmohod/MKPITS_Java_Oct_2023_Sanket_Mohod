@@ -1,0 +1,19 @@
+h2{
+text-align: center;
+font-size: large;
+font-style: normal;
+color: #df6565;
+}
+
+body{
+background-color: aqua;
+padding: auto;
+padding-left: 3%;
+padding-right: 3%;
+background-image: url(/image/bike2.avif);
+background-repeat: no-repeat;
+background-repeat: repeat;
+background-position: 10%;
+background-position: center;
+
+}

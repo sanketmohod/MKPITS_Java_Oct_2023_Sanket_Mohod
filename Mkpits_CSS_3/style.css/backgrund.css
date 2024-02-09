@@ -1,0 +1,58 @@
+body { 
+ background-color: aqua;
+background-color: rgb(128, 78, 132);
+  text-align: center;
+}
+
+body {
+    /* background-image: ; */
+  text-align: center;
+  font-family: Arial, 'Times New Roman', Times, serif, sans-serif;
+  font-size: large;
+  /* background-color: rgb(142, 118, 164); */
+  background-image: url(/image/Restaurant4.webp);
+
+}
+
+body{
+    /* background repeat */
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+}
+
+body{
+    /* background-position:  */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: top right;
+    background-position-y: bottom;
+    background-position: top left
+    ;
+}
+
+body{
+    /* backgrund attachment */
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-attachment: local;
+}
+
+body{
+    /* background-size: ; */
+    background-size: auto;
+    background-size: contain;
+    background-size: cover;
+    background-size: 50%;
+}
+
+body{
+    /* background-origin: ; */
+    background-origin: content-box;
+    background-origin: border-box 10px;
+    background-position: top left;
+    background-size: 30%;
+    background-origin: padding-box;
+    background-origin: padding-box;
+}
