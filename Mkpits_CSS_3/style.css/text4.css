@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  color: aqua;
+  direction: ltr;
+  background-color: #a05f5f;
+}
+h2 {
+  color: #dd1b1b;
+  letter-spacing: normal;
+  letter-spacing: 1ch;
+  
+}

@@ -1,0 +1,10 @@
+a:link {
+  color: rgb(167, 40, 108);
+}
+a:hover {
+  color: blue;
+}
+a:visited {
+  color: black;
+}
+

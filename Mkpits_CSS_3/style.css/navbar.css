@@ -1,0 +1,11 @@
+.container{
+    background-color: aqua;
+    display:block;
+    display: inline-block;
+    
+}
+.content{
+    float: inline-start;
+    padding-bottom: 0%;
+    float: inline-end; 
+}

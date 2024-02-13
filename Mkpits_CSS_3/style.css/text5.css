@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  color: aqua;
+  direction: ltr;
+  background-color: #a05f5f;
+  line-height: normal;
+  line-height: 150%;
+  line-height: 2cm;
+}
+h2 {
+  color: #dd1b1b;
+  letter-spacing: normal;
+  letter-spacing: 1ch;
+  letter-spacing: normal;
+}

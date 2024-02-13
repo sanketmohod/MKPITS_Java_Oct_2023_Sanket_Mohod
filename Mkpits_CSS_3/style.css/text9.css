@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  color: aqua;
+  direction: ltr;
+  background-color: #a05f5f;
+  line-height: 150%;
+  line-height: 2cm;
+  line-height: normal;
+  text-decoration: overline;
+  text-decoration: underline overline;
+  text-indent: 10%;
+  text-shadow: #cf5656;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+}
+h2 {
+  color: #dd1b1b;
+  letter-spacing: normal;
+  text-shadow: aqua;
+  text-shadow: 1ch;
+}

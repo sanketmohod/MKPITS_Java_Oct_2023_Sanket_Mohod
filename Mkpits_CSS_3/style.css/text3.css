@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    color: aqua;
+    direction: ltr;
+}
+h2{
+    color: #a05f5f;
+}
+#para2{
+    color: blue;
+    direction: ltr;
+    direction: rtl;
+    direction: initial;
+}
+#center{
+    color: rgb(40, 10, 108);
+    text-align: center;
+}
+#right{
+    color: aqua;
+    text-align:left;
+}
+#left{
+    color: black;
+    text-align: right;
+}
+p{
+    color: black;
+    text-align: justify;
+}
