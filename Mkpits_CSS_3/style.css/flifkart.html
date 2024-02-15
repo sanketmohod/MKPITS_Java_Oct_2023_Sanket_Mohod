@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        background-color: rgb(237, 234, 230);
+        margin: 0%;
+      }
       .container {
-        background-color: rgb(239, 243, 246);
+        background-color: white;
         border: rgb(241, 247, 252) solid thin;
         margin: 4px;
         height: 100px;
@@ -86,27 +90,162 @@
         width: 40px;
         height: 40px;
       }
-      .shop{
+      .shop {
         position: relative;
         left: 200px;
         top: 40px;
       }
-      .spam{
+      .spam {
         font-size: large;
         position: relative;
         left: 5px;
         top: 5px;
       }
-      .Seller{
+      .Seller {
         font-size: large;
         position: relative;
         left: 40px;
         bottom: 35px;
       }
-      .ver_menu{
+      .ver_menu {
         position: relative;
         left: 255px;
         top: 42px;
+      }
+      .items {
+        position: relative;
+        display: flex;
+        margin: 10px;
+        background-color: white;
+        border: rgb(241, 247, 252) solid thin;
+        margin-right: 30px;
+        padding: 40px;
+        margin-left: 30px;
+        padding-left: 100px;
+        padding-right: 30px;
+      }
+      .glocery,
+      .mobile,
+      .fashion,
+      .electronics,
+      .home_tools,
+      .appliiances,
+      .travel,
+      .toys,
+      .two_wheeler {
+        position: relative;
+        top: 80px;
+        right: 70px;
+        font-size: medium;
+        font-weight: bold;
+      }
+      #glocery,
+      #mobile,
+      #fashion,
+      #electronics,
+      #home_tools,
+      #appliiances,
+      #travel,
+      #toys,
+      #two_wheeler {
+        position: relative;
+        width: 70px;
+        height: 70px;
+      }
+      #two_wheeler,
+      #electronics {
+        position: relative;
+        left: 10px;
+      }
+      #toys {
+        position: relative;
+        left: 25px;
+      }
+
+      /* slider container css
+      */
+      #parent-container {
+        border: 1px solid black;
+        position: relative;
+        padding: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: white;
+
+      }
+      .carousel-container {
+        width: 600px;
+        height: 400px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .navigation-buttons .previous {
+        position: absolute;
+        z-index: 10;
+        font-size: 25px;
+        top: 40%;
+        left: 10px;
+        font-weight: 700;
+
+      }
+
+      .navigation-buttons .next {
+        right: 10px;
+        position: absolute;
+        font-size: 25px;
+        z-index: 10;
+        top: 40%;
+       
+       
+      }
+
+      .navigation-buttons .nav-btn {
+        background: white;
+        cursor: pointer;
+        border-block-start-style: 50%;
+        width: 35px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      .navigation .nav-btn:hover {
+        background: white;
+      }
+
+      .slider-carousel {
+        margin-top: 20px;
+       transition: all 2.0s ease;
+        position: relative;
+        bottom: 20px;
+      }
+      .slider-carousel img {
+        width: 100%;
+       transition: all 2.0s ease;
+        border: none;
+        position: relative;
+        bottom: 100px;
+        height: 170px;
+      }
+
+      .images {
+        position: absolute;
+        display: none;
+      }
+      #slider-img{
+        position: relative;
+        width: 1494px;
+      height: 220px;
+        right: 100px;
+      }
+
+      
+      .main {
+        display: block;
       }
     </style>
   </head>
@@ -137,6 +276,7 @@
             />
           </div>
         </div>
+
         <div class="admin">
           <img
             id="admin_logo"
@@ -155,9 +295,148 @@
           <div class="Seller"><span>Become a Seller</span></div>
         </div>
         <div class="ver_menu">
-        <img id="menu_ver_icon" src="/image/menuvertica.png" alt="verticle menu" />
+          <img
+            id="menu_ver_icon"
+            src="/image/menuvertica.png"
+            alt="verticle menu"
+          />
         </div>
       </div>
     </header>
+    <div class="items">
+      <img
+        id="glocery"
+        src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100"
+        alt=""
+      />
+      <span class="glocery">Glocery</span>
+      <img
+        id="mobile"
+        src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100"
+        alt=""
+      />
+      <span class="mobile">Mobiles</span>
+      <img
+        id="fashion"
+        src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100"
+        alt=""
+      />
+      <span class="fashion">Fashion</span>
+      <img
+        id="electrinics"
+        src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100"
+        alt=""
+      />
+      <span class="electronics">Electronics</span>
+      <img
+        id="home_tools"
+        src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100"
+        alt=""
+      />
+      <span class="home_tools">Home&Tools</span>
+      <img
+        id="appliances"
+        src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100"
+        alt=""
+      />
+      <span class="appliiances">Appliances</span>
+      <img
+        id="travel"
+        src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100"
+        alt=""
+      />
+      <span class="travel">Travel</span>
+      <img
+        id="toys"
+        src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100"
+        alt=""
+      />
+      <span class="toys">Beauty,Toys & More</span>
+      <img
+        id="two_wheeler"
+        src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100"
+        alt=""
+      />
+      <span class="two_wheeler">Two Wheelers</span>
+    </div>
+
+    <!-- slider container html-->
+    <div id="parent-container">
+      <div class="navigation-buttons">
+        <div class="previous nav-btn"> < </div>
+        <div class="next nav-btn"> > </div>
+      </div>
+
+      <div class="slider-carousel">
+        <div class="images main">
+          <img
+            id="slider-img"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/d666db78034ac39f.jpg?q=20
+"
+            alt="Image not available"
+          />
+        </div>
+        <div class="images">
+          <img
+            id="slider-img"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/aa1b2bdcf519b468.jpg?q=20"
+            alt=""
+          />
+        </div>
+        <div class="images">
+          <img
+            id="slider-img"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/12ad072f27dfc663.jpg?q=20"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- slider containe script -->
+    <script>
+      const previous = document.querySelector(".previous");
+      const next = document.querySelector(".next");
+      const images = document.querySelector(".slider-carousel").children;
+      const totalImages = images.length;
+      let currentIndex = 0;
+
+      // Event Listeners to previous and next buttons
+      previous.addEventListener("click", () => {
+        previousImage();
+      });
+
+      next.addEventListener("click", () => {
+        nextImage();
+      });
+
+      setInterval(()=>{
+      	nextImage();
+      },1000);
+
+      // Function to go to next Image
+      function nextImage() {
+        images[currentIndex].classList.remove("main");
+        if (currentIndex == totalImages - 1) {
+          currentIndex = 0;
+        } else {
+          currentIndex++;
+        }
+
+        images[currentIndex].classList.add("main");
+      }
+
+      // Function to go to previous Image
+      function previousImage() {
+        images[currentIndex].classList.remove("main");
+        if (currentIndex == 0) {
+          currentIndex = totalImages - 1;
+        } else {
+          currentIndex--;
+        }
+
+        images[currentIndex].classList.add("main");
+      }
+    </script>
   </body>
 </html>
