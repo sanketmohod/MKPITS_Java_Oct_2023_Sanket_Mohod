@@ -9,6 +9,7 @@
         background-color: rgb(237, 234, 230);
         margin: 0%;
       }
+
       .container {
         background-color: white;
         border: rgb(241, 247, 252) solid thin;
@@ -56,29 +57,41 @@
       .admin {
         display: flex;
         position: relative;
-        left: 150px;
+        left: 145px;
         position: relative;
-        top: 20px;
-        margin-bottom: 30px;
-        padding: 20px;
+        top: 15px;
+        margin-bottom: 35px;
+        padding: 12px;
+        margin-top: 15px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+      }
+      .admin:hover {
+        background-color: rgb(18, 18, 187);
+        color: white;
+      }
+       
+      #dropdown:hover{
+        rotate: 180deg;
       }
       #admin_logo {
         width: 30px;
         height: 30px;
         position: relative;
         right: 10px;
+        bottom: 4px;
       }
       #dropdown {
         width: 25px;
         height: 25px;
         position: relative;
-        top: 5px;
+        top: 4px;
         left: 5px;
       }
       span {
         font-size: large;
         position: relative;
-        top: 8px;
+        top: 5px;
       }
       .cart {
         display: flex;
@@ -109,7 +122,7 @@
       }
       .ver_menu {
         position: relative;
-        left: 255px;
+        left: 285px;
         top: 42px;
       }
       .items {
@@ -165,13 +178,12 @@
       /* slider container css
       */
       #parent-container {
-        border: 1px solid black;
+        border: none;
         position: relative;
         padding: 100px;
         margin-left: 20px;
         margin-right: 20px;
         background-color: white;
-
       }
       .carousel-container {
         width: 600px;
@@ -184,20 +196,17 @@
         position: absolute;
         z-index: 10;
         font-size: 25px;
-        top: 40%;
-        left: 10px;
+        top: 35%;
+        left: 0px;
         font-weight: 700;
-
       }
 
       .navigation-buttons .next {
-        right: 10px;
+        right: -15px;
         position: absolute;
         font-size: 25px;
         z-index: 10;
-        top: 40%;
-       
-       
+        top: 35%;
       }
 
       .navigation-buttons .nav-btn {
@@ -219,13 +228,13 @@
 
       .slider-carousel {
         margin-top: 20px;
-       transition: all 2.0s ease;
+        transition: all 2s ease;
         position: relative;
         bottom: 20px;
       }
       .slider-carousel img {
         width: 100%;
-       transition: all 2.0s ease;
+        transition: all 2s ease;
         border: none;
         position: relative;
         bottom: 100px;
@@ -236,16 +245,115 @@
         position: absolute;
         display: none;
       }
-      #slider-img{
+      #slider-img {
         position: relative;
         width: 1494px;
-      height: 220px;
+        height: 220px;
         right: 100px;
       }
+      .icon {
+        width: 25px;
+        height: 25px;
+      }
 
-      
       .main {
         display: block;
+      }
+
+      .product-details {
+        position: relative;
+        margin: 10px;
+        left: 10px;
+        margin-right: 300px;
+        display: flex;
+        /* border: 1px solid black; */
+        height: 285px;
+        margin-top: -15px;
+        background-color: white;
+      }
+      #electricals {
+        width: 160px;
+        height: 180px;
+        display: flex;
+        margin: 10px;
+        margin-top: 20px;
+      }
+      #text {
+        text-align: center;
+        font-size: medium;
+      }
+      #prize {
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+      }
+      .electricals-products {
+        position: relative;
+        /* border: 1px solid black; */
+        margin: 10px;
+        top: 0px;
+        height: 265px;
+        background-color: rgb(240, 239, 239);
+      }
+      .nav-bar {
+        position: relative;
+        display: flex;
+        /* border: 1px solid black; */
+        width: 1208px;
+        height: 50px;
+        margin: 15px;
+        left: 5px;
+        align-items: center;
+        background-color: white;
+      }
+      .electrical-text {
+        position: relative;
+        font-size: x-large;
+        font-weight: bold;
+        margin: 15px;
+      }
+      #arrow-btn {
+        position: relative;
+        display: flex;
+        left: 950px;
+        /* border: 1px solid black; */
+        height: 23px;
+        width: 23px;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(38, 38, 188);
+      }
+      #arr {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+      }
+      #arr:hover {
+        color: white;
+      }
+
+      #f-img {
+        position: relative;
+        width: 260px;
+        height: 350px;
+      }
+      .flipkart-image {
+        position: relative;
+        display: flex;
+        /* border: 1px solid red; */
+        width: 260px;
+        float: left;
+        left: 1245px;
+        bottom: 353px;
+      }
+
+      .monitor:hover,
+      .camera:hover,
+      .keyboard:hover,
+      .led:hover,
+      .mixser:hover,
+      .printer:hover {
+        transform: scale(1.2);
       }
     </style>
   </head>
@@ -272,7 +380,7 @@
             <input
               type="text"
               id="search"
-              placeholder="Search your product.."
+              placeholder="Search your product.. "
             />
           </div>
         </div>
@@ -283,7 +391,13 @@
             src="/image/admin.png"
             alt="image not supported"
           />
-          <div><span>Login</span></div>
+          <!-- overlay icon -->
+          <div class="overlay">
+            <a href="#" class="icon" title="User Profile">
+              <i class="fa fa-user"></i>
+            </a>
+          </div>
+          <span>Login</span>
           <img id="dropdown" src="/image/drop.png" alt="dropdown image" />
         </div>
         <div class="cart">
@@ -363,8 +477,9 @@
     <!-- slider container html-->
     <div id="parent-container">
       <div class="navigation-buttons">
-        <div class="previous nav-btn"> < </div>
-        <div class="next nav-btn"> > </div>
+        <div class="previous nav-btn"><</div>
+
+        <div class="next nav-btn">></div>
       </div>
 
       <div class="slider-carousel">
@@ -393,6 +508,71 @@
       </div>
     </div>
 
+    <!-- Electronics Instruments -->
+    <div class="nav-bar">
+      <div class="electrical-text">Best of Electronics</div>
+      <div id="arrow-btn">
+        <img id="arr" src="/image/arr1.png" alt="" />
+      </div>
+    </div>
+    <div class="product-details">
+      <div class="electricals-products">
+        <div class="monitor">
+          <img id="electricals" src="/image/monitor.jpg" alt="" />
+        </div>
+        <div id="text">Monitor</div>
+        <div id="prize">From 9,999</div>
+      </div>
+
+      <div class="electricals-products">
+        <div class="camera">
+          <img id="electricals" src="/image/camera.jpg" alt="" />
+        </div>
+        <div id="text">Camera</div>
+        <div id="prize">From 5,999</div>
+      </div>
+
+      <div class="electricals-products">
+        <div class="keyboard">
+          <img id="electricals" src="/image/keyboard.jpg" alt="" />
+        </div>
+        <div id="text">Camera</div>
+        <div id="prize">From 5,999</div>
+      </div>
+
+      <div class="electricals-products">
+        <div class="led">
+          <img id="electricals" src="/image/LED.webp" alt="" />
+        </div>
+        <div id="text">LED TV</div>
+        <div id="prize">From 7,999</div>
+      </div>
+
+      <div class="electricals-products">
+        <div class="mixser">
+          <img id="electricals" src="/image/mixser.jpg" alt="" />
+        </div>
+        <div id="text">Mixser</div>
+        <div id="prize">From 1,599</div>
+      </div>
+
+      <div class="electricals-products">
+        <div class="printer">
+          <img id="electricals" src="/image/printer.jpg" alt="" />
+        </div>
+        <div id="text">Printer</div>
+        <div id="prize">From 2,999</div>
+      </div>
+    </div>
+
+    <!-- slide 4 -->
+    <div class="flipkart-image">
+      <img
+        id="f-img"
+        src="https://rukminim1.flixcart.com/fk-p-flap/1000/1540/image/2e3d520dea774823.jpg?q=20"
+        alt=""
+      />
+    </div>
     <!-- slider containe script -->
     <script>
       const previous = document.querySelector(".previous");
@@ -410,9 +590,9 @@
         nextImage();
       });
 
-      setInterval(()=>{
-      	nextImage();
-      },1000);
+      setInterval(() => {
+        nextImage();
+      }, 1000);
 
       // Function to go to next Image
       function nextImage() {
