@@ -70,8 +70,8 @@
         background-color: rgb(18, 18, 187);
         color: white;
       }
-       
-      #dropdown:hover{
+
+      #dropdown:hover {
         rotate: 180deg;
       }
       #admin_logo {
@@ -260,10 +260,11 @@
         display: block;
       }
 
+      /* Electricals products */
       .product-details {
         position: relative;
         margin: 10px;
-        left: 10px;
+        left: 9px;
         margin-right: 300px;
         display: flex;
         /* border: 1px solid black; */
@@ -271,7 +272,7 @@
         margin-top: -15px;
         background-color: white;
       }
-      #electricals {
+      #IMG {
         width: 160px;
         height: 180px;
         display: flex;
@@ -287,7 +288,7 @@
         font-weight: bold;
         font-size: large;
       }
-      .electricals-products {
+      .products {
         position: relative;
         /* border: 1px solid black; */
         margin: 10px;
@@ -347,13 +348,46 @@
         bottom: 353px;
       }
 
-      .monitor:hover,
-      .camera:hover,
-      .keyboard:hover,
-      .led:hover,
-      .mixser:hover,
-      .printer:hover {
+      .img-div:hover {
         transform: scale(1.2);
+      }
+
+      /* Beauty, Food Toys and more */
+
+      .nav-bar1 {
+        position: relative;
+        display: flex;
+        /* border: 1px solid black; */
+        width: 1485px;
+        height: 50px;
+        margin: 15px;
+        left: 5px;
+        bottom: 345px;
+        align-items: center;
+        background-color: white;
+      }
+      #arrow-btn1 {
+        position: relative;
+        display: flex;
+        left: 1130px;
+        /* border: 1px solid black; */
+        height: 23px;
+        width: 23px;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(38, 38, 188);
+      }
+      .product-details1 {
+        position: relative;
+        margin: 10px;
+        left: 10px;
+        margin-right: 300px;
+        display: flex;
+        /* border: 1px solid black; */
+        height: 285px;
+        bottom: 360px;
+        background-color: white;
+        width: 1485px;
       }
     </style>
   </head>
@@ -516,51 +550,51 @@
       </div>
     </div>
     <div class="product-details">
-      <div class="electricals-products">
-        <div class="monitor">
-          <img id="electricals" src="/image/monitor.jpg" alt="" />
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/camera.jpg" alt="" />
         </div>
-        <div id="text">Monitor</div>
+        <div id="text">Camera</div>
         <div id="prize">From 9,999</div>
       </div>
 
-      <div class="electricals-products">
-        <div class="camera">
-          <img id="electricals" src="/image/camera.jpg" alt="" />
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/keyboard.jpg" alt="" />
         </div>
-        <div id="text">Camera</div>
+        <div id="text">Keboard</div>
         <div id="prize">From 5,999</div>
       </div>
 
-      <div class="electricals-products">
-        <div class="keyboard">
-          <img id="electricals" src="/image/keyboard.jpg" alt="" />
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/LED.webp" alt="" />
         </div>
-        <div id="text">Camera</div>
+        <div id="text">LED</div>
         <div id="prize">From 5,999</div>
       </div>
 
-      <div class="electricals-products">
-        <div class="led">
-          <img id="electricals" src="/image/LED.webp" alt="" />
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/monitor.jpg" alt="" />
         </div>
-        <div id="text">LED TV</div>
+        <div id="text">Moniter</div>
         <div id="prize">From 7,999</div>
       </div>
 
-      <div class="electricals-products">
-        <div class="mixser">
-          <img id="electricals" src="/image/mixser.jpg" alt="" />
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/printer.jpg" alt="" />
         </div>
-        <div id="text">Mixser</div>
+        <div id="text">Printer</div>
         <div id="prize">From 1,599</div>
       </div>
 
-      <div class="electricals-products">
-        <div class="printer">
-          <img id="electricals" src="/image/printer.jpg" alt="" />
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/mixser.jpg" alt="" />
         </div>
-        <div id="text">Printer</div>
+        <div id="text">Mixser</div>
         <div id="prize">From 2,999</div>
       </div>
     </div>
@@ -618,5 +652,135 @@
         images[currentIndex].classList.add("main");
       }
     </script>
+
+    <!-- Beauty, foods toys and more -->
+    <div class="nav-bar1">
+      <div class="electrical-text">Beauty, Foods, Toys & more</div>
+      <div id="arrow-btn1">
+        <img id="arr" src="/image/arr1.png" alt="" />
+      </div>
+    </div>
+    <div class="product-details1">
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/dry-fruites.jpg" alt="" />
+        </div>
+        <div id="text">Dry-Fruites</div>
+        <div id="prize">Up to 50% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/avenger-toys.jpg" alt="" />
+        </div>
+        <div id="text">Cartoon Toys</div>
+        <div id="prize">Up to 70% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/cyle-img.jpg" alt="" />
+        </div>
+        <div id="text">Cycle</div>
+        <div id="prize">30% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/guitar-img.jpg" alt="" />
+        </div>
+        <div id="text">Guitar</div>
+        <div id="prize">Just for 499</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/lays-img.jpg" alt="" />
+        </div>
+        <div id="text">Lays</div>
+        <div id="prize">From 10 ruppes</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/remote-car.jpg" alt="" />
+        </div>
+        <div id="text">Renote Car</div>
+        <div id="prize">Up to 75% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/stationay-img.jpg" alt="" />
+        </div>
+        <div id="text">Stationay</div>
+        <div id="prize">Only for 199</div>
+      </div>
+    </div>
+
+    <!-- Home & Kitchen Essentials -->
+    <div class="nav-bar1">
+      <div class="electrical-text">Home & Kitchen Essentials</div>
+      <div id="arrow-btn1">
+        <img id="arr" src="/image/arr1.png" alt="" />
+      </div>
+    </div>
+    <div class="product-details1">
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/air-cooler.webp" alt="" />
+        </div>
+        <div id="text">Air Cooler</div>
+        <div id="prize">From 5,999</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/bulb-img.jpg" alt="" />
+        </div>
+        <div id="text">ELD Blubs</div>
+        <div id="prize">Best Quaity</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/budha-img.jpg" alt="" />
+        </div>
+        <div id="text">Picture Frame</div>
+        <div id="prize">50% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/decorate-wall.jpg" alt="" />
+        </div>
+        <div id="text">Wall Decoration</div>
+        <div id="prize">Up to 80% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/budha-painting.jpg" alt="" />
+        </div>
+        <div id="text">Paintings</div>
+        <div id="prize">Up to 60% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/light-celling.jpg" alt="" />
+        </div>
+        <div id="text">Ceilling Ligths</div>
+        <div id="prize">Up to 55% Off</div>
+      </div>
+
+      <div class="products">
+        <div class="img-div">
+          <img id="IMG" src="/image/plant-img.jpg" alt="" />
+        </div>
+        <div id="text">Artifitials Plants</div>
+        <div id="prize">30% Off</div>
+      </div>
+    </div>
   </body>
 </html>

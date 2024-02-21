@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragistration Form</title>
+    <style>
+      body {
+        /* background-color: rgb(193, 202, 210); */
+        background-image: url("3d\ backgrund.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .form {
+        position: relative;
+        background-color: white;
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 25%;
+        margin-top: 12%;
+        margin-left: 40%;
+        background-image: url("bg1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .input_field {
+        position: relative;
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 250px;
+        margin: 60px;
+        margin-top: 35px;
+        margin-left: 50px;
+      }
+      #name,
+      #email,
+      #pass,
+      #cpass {
+        text-align: center;
+        font-size: medium;
+      }
+      input {
+        align-self: center;
+        height: 30px;
+        width: 110%;
+      }
+      .main_text {
+        text-align: center;
+        font-size: larger;
+        padding-top: 1px;
+        font-weight: bold;
+      }
+      .btn {
+        position: relative;
+        margin-bottom: 50px;
+        width: 60%;
+        margin: 10px;
+        margin-top: -25px;
+      }
+      button {
+        width: 70%;
+        height: 40px;
+        align-items: center;
+        margin-left: 100px;
+        font-size: large;
+        background-color: blue;
+        color: white;
+      }
+      p {
+        text-align: center;
+      }
+      .btn:hover{
+       transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="main_text">
+        <h3>Ragistration Form</h3>
+      </div>
+      <div class="input_field">
+        <form action="https://www.w3schools.com/js/js_promise.asp" method="post">
+          <input
+            type="text"
+            id="name"
+            placeholder="Type your name"
+            required
+          /><br /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Type your email address"
+            required
+          /><br /><br />
+          <input
+            type="password"
+            id="pass"
+            placeholder="Type your password"
+            required
+          /><br /><br />
+          <input
+            type="cpassword"
+            id="cpass"
+            placeholder="ReType your password"
+            required
+          /><br /><br />
+        <!-- </form> -->
+      </div>
+      <div class="btn">
+        <button type="submit">Register</button>
+      </div>
+       </form>
+      <p>Already have an account? <a href="ragistration_form1.html">Login here.</a></p>
+    </div>
+  </body>
+</html>
