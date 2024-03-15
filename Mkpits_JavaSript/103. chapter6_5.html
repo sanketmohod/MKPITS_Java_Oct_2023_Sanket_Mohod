@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // change the background of the page to yellow, red, or any other color base on user input to prompt
+      let setColor = prompt(`please input your color`);
+      if (setColor == `red`) {
+        document.body.style.background = "red";
+      } else if (setColor == `yellow`) {
+        document.body.style.background = "yellow";
+      } else if (setColor == `black`) {
+        document.body.style.background = "black";
+      } else if (setColor == `orange`) {
+        document.body.style.background = "orange";
+      } else if (setColor == `green`) {
+        document.body.style.background = "green";
+      } else if (setColor == `blue`) {
+        document.body.style.background = "blue";
+      } else {
+        alert(`invalid color`);
+      }
+    </script>
+  </body>
+</html>

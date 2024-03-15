@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // In Q1 use confirm to ask the user  if he wants to see the prompt again
+
+      while (true) {
+        let age = parseInt(prompt(`enter the age.`));
+        if (age >= 18) {
+          alert(`eligible to drive.`);
+        } else {
+          alert(`not eligible to drive.`);
+        }
+        confirm(`please confimed, do you want to continue`);
+      }
+    </script>
+  </body>
+</html>
