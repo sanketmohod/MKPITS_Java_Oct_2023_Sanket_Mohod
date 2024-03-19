@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div1">
+      <p id="para1">this is my first para</p>
+      <h1>This is a heading</h1>
+      <span>This is a span element.</span><br />
+    </div>
+    <h2 class="heading">this is my heading class</h2>
+    <p class="para2">paragram 2</p>
+    <!-- 
+    <script>--------------------------------</script> -->
+    <script>
+      let result = document.getElementsByClassName("div1");
+      document.write(result); // it will showsthe type of object class - [object  HTMLCollection]
+      console.log(result); // it will the class  name div1 and its properties
+    </script>
+  </body>
+</html>

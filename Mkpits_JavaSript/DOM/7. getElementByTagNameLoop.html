@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para1">paragraph 1</p>
+    <div id="div1">
+      <h1>hello everyone</h1>
+      <p>this is a paragraph in div1.</p>
+    </div>
+    <p><span>para 2</span></p>
+    <div id="div2">
+      <p>paragraph 2</p>
+    </div>
+    <!-- ----------------------------------------------------- -->
+    <script>
+      let result = document.getElementsByTagName("p");
+      let len = result.length;
+      document.write("length of element p is : " + len + "<br>");
+
+      // for loop
+      //   for (let i = 0; i < len; i++) {
+      //     document.write(result[i] + "<br/>");
+      //     console.log(result[i]); // return all p tags
+      //   }
+
+      // for of
+      for (const iterr of result) {
+        document.write(iterr + "<br/>");
+        console.log(iterr); //
+      }
+    </script>
+  </body>
+</html>

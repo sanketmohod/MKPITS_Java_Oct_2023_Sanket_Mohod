@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="concept">this is dom concept</h1>
+    <h1 id="con">DOM(Document Object Model)</h1>
+    <span>hello world!</span><br />
+    <p id="demo">Demo program for DOM manipulation.</p>
+
+    <!-- --------------------------<script>-------------------</script>------------------------- -->
+    <script>
+      let result = document.getElementsByTagName("h1"); // Get the first h1 element by tagname
+      document.write(result); //  it will shows the object of collection of type  Nodelist [object HTMLCollection]
+      console.log(result); // it wiil return the h1 tag
+    </script>
+  </body>
+</html>

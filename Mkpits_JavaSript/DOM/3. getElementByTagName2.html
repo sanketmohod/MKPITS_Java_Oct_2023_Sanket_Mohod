@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    <h1>DOM Concept</h1>
+    <h2>Now</h2>
+    <p id="tech">Hello <span>Jvascript learning</span></p>
+    <div>
+      <p>paragraph body</p>
+    </div>
+
+    <!-- <script>---------------------------------</script> -->
+    <script>
+      // Whole Document
+      let result = document.getElementsByTagName("*");
+      document.write(result);
+      console.log(result);
+
+      // Only Inside Body
+      let result1 = document.body.getElementsByTagName("*");
+      document.write(result1);
+      console.log(result1); // it will return the all body tag collection
+    </script>
+  </body>
+</html>
