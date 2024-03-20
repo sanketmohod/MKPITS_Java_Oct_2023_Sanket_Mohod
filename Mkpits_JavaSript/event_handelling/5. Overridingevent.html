@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Overriding event</h1>
+    <button type="button" id="myId">Click Me</button>
+    <script>
+      function myBtn1() {
+        alert("Clicked done 1");
+      }
+      function myBtn2() {
+        alert("Clicked done 2");
+      }
+      document.getElementById("myId").onclick = myBtn1;
+      document.getElementById("myId").onclick = myBtn2; // only last staement will be executed bcoz it will take current action
+    </script>
+  </body>
+</html>

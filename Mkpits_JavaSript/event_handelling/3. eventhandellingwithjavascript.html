@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Event handelling by javascript</h1>
+    <button type="button" id="myId">Click Me</button>
+    <script>
+      let btn = document.getElementById("myId");
+      //   btn.onclick = function () {
+      //     alert("Clicked done");
+      //   };
+
+      //   btn.onclick = () => {
+      //     alert("Clcked done");
+      //   };
+
+      document.getElementById("myId").onclick = () => {
+        alert("Clicked done");
+      };
+    </script>
+  </body>
+</html>

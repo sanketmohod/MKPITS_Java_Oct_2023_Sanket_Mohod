@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Mouse Event</h1>
+    Name<input type="text" id="mytext" title="input" />
+
+    <script>
+      var txt = document.getElementById("mytext");
+      function changeColorOrange(e) {
+        txt.style.backgroundColor = "orange";
+      }
+      function changeColorWhite(e) {
+        txt.style.backgroundColor = "white";
+      }
+      txt.addEventListener("mouseover", changeColorOrange, false);
+      txt.addEventListener("mouseout", changeColorWhite, false);
+    </script>
+  </body>
+</html>

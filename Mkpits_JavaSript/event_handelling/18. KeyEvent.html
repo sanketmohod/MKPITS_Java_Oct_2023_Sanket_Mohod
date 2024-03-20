@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Key Event</h1>
+    Name: <input type="text" id="mytext" title="input"/>
+
+    <script>
+      var txt = document.getElementById("mytext");
+      function ke(e) {
+        console.log(
+          e.type + " " + e.keyCode + " " + String.fromCharCode(e.keyCode)
+        );
+      }
+      txt.addEventListener("keydown", ke, false);
+      txt.addEventListener("keypress", ke, false); // KeyPress works with only printable characters
+      txt.addEventListener("keyup", ke, false);
+    </script>
+  </body>
+</html>

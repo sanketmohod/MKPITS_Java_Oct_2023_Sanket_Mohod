@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>addEventListener method</h1>
+    <button type="button" id="myId">Click Me</button>
+    <script>
+      //   function myBtn() {
+      //     alert("Clicked done");
+      //   }
+      //   document.getElementById("myId").addEventListener("click", myBtn);
+
+      document.getElementById("myId").addEventListener(
+        "click",
+        (myBtn = () => {
+          alert("Clicked done");
+        })
+      );
+    </script>
+  </body>
+</html>
