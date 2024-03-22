@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="myform" id="formId">
+      <input
+        type="text"
+        name="username"
+        id="userid"
+        placeholder="enter your name"
+      /><br /><br />
+      <input
+        type="email"
+        name="email"
+        id="emailid"
+        placeholder="Enter Your Email Id"
+      /><br /><br />
+      <input
+        type="password"
+        name="pass"
+        id="pwd"
+        placeholder="Password"
+      /><br /><br />
+      <input
+        type="button"
+        name="btn"
+        id="btnid"
+        value="reset"
+        onclick="resetForm()"
+      />
+    </form>
+
+    <!-- from handelling properties -->
+    <script>
+      let res = document.myform;
+      console.log(res);// return all the form elements
+      console.log(res.length); // return lentgth of all elements(tags) contais the form
+      console.log(res.elements[2]); // return specific element
+      console.log(res.action);// it shows action perform on form
+      console.log(res.method);// it return the method(post/get) by default get 
+      //   function resetForm() {
+      //     myform.reset();
+      //   }
+
+      let resetForm = () => {
+        myform.reset();
+      };
+    </script>
+  </body>
+</html>

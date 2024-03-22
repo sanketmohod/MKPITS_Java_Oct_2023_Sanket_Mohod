@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="myform" id="myformid">
+      <input
+        type="text"
+        name="username"
+        placeholder="enter your user name"
+        id="userid"
+      /><small id="user"></small><br /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        id="emailid"
+      />
+      <small id="mail"></small><br /><br />
+      <input
+        type="password"
+        name="pass"
+        placeholder="password"
+        id="pws"
+      /><small id="passw"></small><br /><br />
+      <input type="button" name="btn" value="submit" onclick="validate()" />
+
+      <script>
+        function validateusername() {
+          let userpattern = /^([^0-9\W]*)$/;
+          if (userpattern.test(document.myform.username.value)) {
+            document.getElementById("user").textContent =
+              "username is validate";
+            document.getElementById("user").style.color = "green";
+          } else {
+            document.getElementById("user").textContent = "Invalid username";
+            document.getElementById("user").style.color = "red";
+          }
+        }
+        document.myform.username.addEventListener("keyup", validateusername);
+
+        function validateemail() {
+          let emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if (emailpattern.test(document.myform.email.value)) {
+            document.getElementById("mail").textContent = "email is validate";
+            document.getElementById("mail").style.color = "green";
+          } else {
+            document.getElementById("mail").textContent =
+              "email is not validate";
+            document.getElementById("mail").style.color = "red";
+          }
+        }
+        document.myform.emailid.addEventListener("keyup", validateemail);
+
+        function validatepassword() {
+          let passpattern = /^[A-Za-z]\w{7,14}$/;
+          if (passpattern.test(document.myform.pass.value)) {
+            document.getElementById("passw").textContent = "Password is valid.";
+
+              document.getElementById("passw").style.color = "green";
+          } else {
+            document.getElementById("passw").textContent =
+              "Password is not valid.";
+
+            document.getElementById("passw").style.color = "red";
+          }
+        }
+        document.myform.pws.addEventListener("keyup", validatepassword);
+      </script>
+    </form>
+  </body>
+</html>

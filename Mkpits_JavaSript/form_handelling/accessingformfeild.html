@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="" name="myform1" id="myid1">
+      <input
+        type="text"
+        name="username"
+        placeholder="enter your name"
+        id="userid"
+      /><br /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        id="mail"
+      /><br /><br />
+      <input
+        type="password"
+        name="pass"
+        placeholder="password"
+        id="
+        passid"
+      /><br /><br />
+
+      <input
+        type="button"
+        name="btn"
+        id="btnid"
+        value="Submit"
+        onclick="validate()"
+      />
+    </form>
+    <hr />
+    <form action="" name="myform2" id="myid2">
+      <input
+        type="text"
+        name="username"
+        placeholder="enter your name"
+        id="userid1"
+      /><br /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        id="mail1"
+      /><br /><br />
+      <input
+        type="password"
+        name="pass"
+        placeholder="password"
+        id="
+        passid1"
+      /><br /><br />
+
+      <input
+        type="button"
+        name="btn"
+        id="btnid1"
+        value="Submit"
+        onclick="validate()"
+      />
+
+      <script>
+        // acceseing by id
+        // let  user = document.getElementById("userid1");
+        // console.log(user);
+        // console.log(user.name);
+        // console.log(user.type);
+        // console.log(user.id);
+        // console.log(user.placeholder);
+
+        // with element index number
+        // let user = document.myform1.elements[0];
+        // console.log(user);
+        // console.log(user.name);
+        //  console.log(user.type);
+        //  console.log(user.id);
+        //  console.log(user.placeholder);
+
+         // with element[name_attributes value]
+        // let user = document.myform1.elements["email"];
+        // console.log(user);
+        // console.log(user.name);
+        //  console.log(user.type);
+        // console.log(user.id);
+        // console.log(user.placeholder);
+
+        // with form name and name attributes value
+         let user = document.myform1.userid;
+         console.log(user);
+         console.log(user.name);
+          console.log(user.type);
+         console.log(user.id);
+         console.log(user.placeholder);
+
+      </script>
+</body>
+</html>
