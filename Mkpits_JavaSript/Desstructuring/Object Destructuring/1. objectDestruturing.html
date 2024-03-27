@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object Destructuring</h1>
+    <script>
+      let obj = {
+        name: "john",
+        Indentity: "wrestler",
+        age: 48,
+      };
+
+      // old method
+      // console.log(obj.name);
+      // console.log(obj.Indentity);
+      // console.log(obj.age);
+
+      // object destructuring
+      let { name, Indentity, age } = obj;
+      console.log(name);
+      console.log(Indentity);
+      console.log(age);
+    </script>
+  </body>
+</html>

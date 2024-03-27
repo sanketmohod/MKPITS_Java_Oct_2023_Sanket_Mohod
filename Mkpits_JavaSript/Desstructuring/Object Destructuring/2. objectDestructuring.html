@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object Destructuring</h1>
+    <script>
+      let student = {
+        name: "Karan",
+        age: 23,
+        country: "India",
+        state: "Maharashtra",
+      };
+      let {
+        name: studName,
+        age: studAge,
+        country: studCountry,
+        state: studState,
+      } = student;
+      console.log(studName);
+      console.log(studAge);
+      console.log(studCountry);
+      console.log(studState);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array Destructuring</h1>
+    <script>
+      let arr = [50, 60, 70];
+      function show(z) {
+        return z;
+      }
+      //   let x = show(arr);
+      //   console.log(x[0]);
+      //   console.log(x[1]);
+      //   console.log(x[2]);
+
+      // let x = show(arr);
+      // let[x1, x2, x3] = x;
+
+      let [x1, x2, x3] = show(arr);
+      console.log(x1);
+      console.log(x2);
+      console.log(x3);
+    </script>
+  </body>
+</html>

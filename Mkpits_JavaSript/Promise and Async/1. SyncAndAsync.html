@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Syncronous and Asyncronous</h1>
+    <script>
+      // Syncronous
+      function myfunct() {
+        console.log("Inside function");
+      }
+      console.log("start");
+      myfunct();
+      console.log("end");
+
+      // Asyncronous
+      console.log("strat");
+      setTimeout(() => {
+        console.log("Inside set time ouot");
+      }, 2000);
+      console.log("end");
+
+      // Callback is not always Asyncronous
+      console.log("Start");
+      const roll = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      roll.forEach((r) => {
+        console.log(r);
+      });
+      console.log("End");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object Destructuring</h1>
+    <h2>Returning a function</h2>
+    <script>
+      var course = {
+        courseName: "JavaScript",
+        duration: "SixMonths",
+        tutor: "Technocrats Solutions",
+      };
+      function show(z) {
+        return z;
+      }
+      /* Old Way
+      var x = show(course);
+      console.log(x.courseName);
+      console.log(x.duration);
+      console.log(x.tutor);
+      */
+
+      // Destructuring
+      // var x = show(course);
+      // var { courseName, duration, tutor } = x;
+      var { courseName, duration, tutor } = show(course);
+      console.log(courseName);
+      console.log(duration);
+      console.log(tutor);
+    </script>
+  </body>
+</html>

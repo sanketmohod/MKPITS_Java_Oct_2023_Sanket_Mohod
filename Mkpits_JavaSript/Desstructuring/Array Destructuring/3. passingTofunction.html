@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array Destructuring</h1>
+    <h2>Passing Value to Function</h2>
+    <script>
+      let arr = [14, 25, 36];
+      //   function value(a) {
+      //     console.log(a[0]);
+      //     console.log(a[1]);
+      //     console.log(a[2]);
+      //   }
+
+      let value = ([v1, v2, v3]) => {
+        console.log(v1);
+        console.log(v2);
+        console.log(v3);
+      };
+      value(arr);
+    </script>
+  </body>
+</html>
