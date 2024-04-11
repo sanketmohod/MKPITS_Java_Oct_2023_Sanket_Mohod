@@ -1,4 +1,4 @@
-package com.mkpits.jdbc;
+package com.mkpits.jdbc1;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,8 +15,8 @@ import javax.sql.DataSource;
 /**
  * Servlet implementation class StudentControllerServlet
  */
-@WebServlet("/StudentControllerServlet")
-public class StudentControllerServlet extends HttpServlet {
+@WebServlet("/StudentControllerServletNew")
+public class StudentControllerServletNew extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -27,7 +27,7 @@ public class StudentControllerServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	private StudentDbUtil studentDbUtil;
+	private StudentDbUtility studentDbUtil;
 	@Resource(name = "jdbc/web_student_tracker")
 	private DataSource dataSource;
 
@@ -36,7 +36,7 @@ public class StudentControllerServlet extends HttpServlet {
 		super.init();
 		// create our student db util.. and pass the connectition tool database
 		try {
-			studentDbUtil = new StudentDbUtil(dataSource);
+			studentDbUtil = new StudentDbUtility(dataSource);
 		} catch (Exception e) {
 			throw new ServletException(e);
 		}
@@ -45,19 +45,54 @@ public class StudentControllerServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
+			// read the command parameter
+			String theCommand = request.getParameter("command");
+			// if the command is missing, then default to listing student
+			if(theCommand == null) {
+				theCommand = "LIST";
+			}
+			
+			// ROUTE TO THE APPROPRIATE METHOD
+			switch(theCommand) {
+			case "LIST" :
+				listStudents(request, response);
+                break;
+                
+			case "ADD" :
+				addStudent(request, response);
+				break;
+				default:
+					listStudents(request, response);
+                
+			})
 			listStudents(request, response);
 		} catch (Exception e) {
 			throw new ServletException(e);
 		}
 	}
 
+	private void addStudent(HttpServletRequest request, HttpServletResponse response) {
+                // resd student data from form
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String email = request.getParameter("email");
+		
+		// create new student model  object
+		Student_Model theStudent = new Student_Model(firstName, lastName, email);
+		
+		// add student to the data base
+		
+		studentDbUtil.addStudent(theStudent);
+
+	}
+
 	private void listStudents(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// get students from db util
-		List<Student> students=studentDbUtil.getStudent();
+		List<Student_Model> students=studentDbUtil.getStudent();
 		// add students to request
 		request.setAttribute("STUDENT_LIST", students);
 		// SEND TO jsp PAGE(view)
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/list-student-css.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/list-student-button.jsp");
 		dispatcher.forward(request, response);
 
 	}

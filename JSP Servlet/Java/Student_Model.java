@@ -1,24 +1,24 @@
-package com.mkpits.jdbc;
+package com.mkpits.jdbc1;
 
-public class Student {
+public class Student_Model {
 
 	private int id;
 	private String fName;
 	private String lName;
 	private String email;
 
-	public Student() {
+	public Student_Model() {
 
 	}
 
-	public Student(String fName, String lName, String email) {
+	public Student_Model(String fName, String lName, String email) {
 
 		this.fName = fName;
 		this.lName = lName;
 		this.email = email;
 	}
 
-	public Student(int id, String fName, String lName, String email) {
+	public Student_Model(int id, String fName, String lName, String email) {
 
 		this.id = id;
 		this.fName = fName;
