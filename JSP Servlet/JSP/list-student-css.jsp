@@ -29,6 +29,7 @@ List<Student_Model> theStudents = (List<Student_Model>) request.getAttribute("ST
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>Action</th>
 				</tr>
 				<c:forEach var="tempStudent" items ="${STUDENT_LIST}">
 					<tr>
@@ -36,7 +37,8 @@ List<Student_Model> theStudents = (List<Student_Model>) request.getAttribute("ST
                       <td>${tempStudent.fName} </td>
                       <td>${tempStudent.lName} </td>
                       <td>${tempStudent.email} </td>
-           
+                      <td>Add Link Here </td>
+         
 					</tr>
 				</c:forEach>
 			</table>
