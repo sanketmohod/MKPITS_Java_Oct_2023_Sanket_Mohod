@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; 
+  padding: 0;
+   background-image: url("Image/image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 400px; 
+  margin: 50px auto; 
+  padding: 30px; 
+  border: 1px solid rgb(0, 128, 255); 
+  border-radius: 5px; 
+  background-color: blueviolet;
+}
+
+h1 {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+/* Form styles */
+form {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+label {
+  width: 100px; 
+  margin-bottom: 5px; 
+  text-align: right; 
+  color: black;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 250px; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  margin-bottom: 15px; 
+}
+
+/* Link styles */
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none; 
+  font-weight: bold;
+  padding: 10px 20px; 
+  display: inline-block; 
+  background-color: rgb(0, 0, 255); 
+  border-radius: 5px; 
+  margin-top: 20px; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+a:hover {
+  background-color: rgb(0, 64, 128); 
+}
