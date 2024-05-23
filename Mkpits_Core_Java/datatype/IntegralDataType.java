@@ -2,9 +2,9 @@ package com.mkpits.datatype;
 
 public class IntegralDataType {
     //DataType - Primitive/Predefined Or User-defind/Custom
-	// DataType - are the predefined/user-defined key word used t declare the variable
+	// DataType - are the predefined/user-defined key word used to declare the variable
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
         // Integral data type - int , byte, short, long - used to declare integer values 
 		
 		int intNumb = 245;

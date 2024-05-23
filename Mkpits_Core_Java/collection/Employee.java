@@ -10,6 +10,11 @@ public class Employee {
 		this.name = name;
 		this.salary = salary;
 	}
+	
+	public Employee(int i, String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", salary=" + salary + "]";

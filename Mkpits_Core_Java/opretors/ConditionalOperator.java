@@ -13,7 +13,7 @@ public class ConditionalOperator {
          int numb1 = Integer.parseInt(br.readLine());
          System.out.println("Enter the second number : ");
          int numb2 = Integer.parseInt(br.readLine());
-          System.out.println((numb1>numb2)? ""+numb1+" is greater" : ""+numb2+" is greater");
+          System.out.println((numb1>numb2)? ""+numb1+" is greater" : ""+numb2+ " is greater");
        // String result =  (numb1>numb2)? ""+numb1+" is greater" : ""+numb2+" is greater";
        // System.out.println(result);
 	}
