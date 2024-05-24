@@ -11,7 +11,7 @@ public class ClearMethod {
 		list.add(11);
 		list.add(12);
 		list.add(13);
-		list.
+		
 		for (Integer integer : list) {
 			System.out.println(integer);
 		}
