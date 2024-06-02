@@ -7,13 +7,7 @@ public class AddressDto {
     private String city;
     private String state;
 
-    public AddressDto(char addressType, String street, String city, String state, String country) {
-        this.addressType = addressType;
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.country = country;
-    }
+
 
     private String country;
 

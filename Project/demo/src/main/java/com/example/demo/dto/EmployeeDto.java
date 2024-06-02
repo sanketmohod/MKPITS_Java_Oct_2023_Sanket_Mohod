@@ -1,11 +1,17 @@
 package com.example.demo.dto;
 
+import java.util.List;
+
 public class EmployeeDto {
 
     private String name ;
     private  String department ;
     private  String designation ;
-    private AddressDto address;
+    private List<AddressDto> address;
+
+    public void setAddress(List<AddressDto> address) {
+        this.address = address;
+    }
 
     public String getName() {
         return name;
@@ -15,12 +21,7 @@ public class EmployeeDto {
         this.name = name;
     }
 
-    public EmployeeDto(String name, String department, String designation, AddressDto address) {
-        this.name = name;
-        this.department = department;
-        this.designation = designation;
-        this.address = address;
-    }
+
 
     public String getDepartment() {
         return department;
@@ -38,11 +39,5 @@ public class EmployeeDto {
         this.designation = designation;
     }
 
-    public AddressDto getAddress() {
-        return address;
-    }
 
-    public void setAddress(AddressDto address) {
-        this.address = address;
-    }
 }
