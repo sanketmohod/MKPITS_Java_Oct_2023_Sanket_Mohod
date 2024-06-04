@@ -9,13 +9,17 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDto {
+public class UserDatabaseDto {
 
-    private int id;
+    private Integer id;
     private String username;
-    private int age;
+    private String firstName;
+    private String lastName;
+    private String mobile;
+    private String email;
 
 
 
 
 }
+

@@ -1,7 +1,10 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.UserDatabaseDto;
 import com.example.demo.dto.UserDto;
-import com.example.demo.service.impl.UserService;
+import com.example.demo.service.UserServices;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,29 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    UserService userServiceConstructor = new UserService();
-    UserService getUserServiceSetter = new UserService();
+   @Autowired
+   UserServices userService;
 
-    public UserController(UserService userServiceConstructor){
-        this.userServiceConstructor = userServiceConstructor;
-    }
-
-    public void setGetUserServiceSetter(UserService getUserServiceSetter) {
-        this.getUserServiceSetter = getUserServiceSetter;
-    }
-
-    @RequestMapping("/user")
+    @RequestMapping("/users/database")
     public ResponseEntity<Object> getUserController(){
-        UserDto userDto = userServiceConstructor.getAllUsers();
-        System.out.println("Service Constructor : "+userServiceConstructor.hashCode());
+        UserDatabaseDto userDto = userService.getAllUsers();
+        System.out.println("Service Constructor : "+userService.hashCode());
         return ResponseEntity.ok(userDto);
     }
 
-
-    @RequestMapping("/setter")
-    public ResponseEntity<Object> getUserSetter(){
-        UserDto userDto = getUserServiceSetter.getAllUsers();
-        System.out.println("Service Setter : "+getUserServiceSetter.hashCode());
-        return ResponseEntity.ok(userDto);
-    }
 }

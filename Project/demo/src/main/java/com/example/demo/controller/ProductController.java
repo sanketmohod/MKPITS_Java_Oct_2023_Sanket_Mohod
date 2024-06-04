@@ -13,7 +13,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @RequestMapping("/products")
+    @RequestMapping("/all/products")
     public ResponseEntity<Object> getProducts(){
         ProductDto products = productService.getAllProducts();
         return ResponseEntity.ok(products);
