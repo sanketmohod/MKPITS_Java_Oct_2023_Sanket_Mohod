@@ -5,9 +5,9 @@ import com.example.demo.service.IUserService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService implements IUserService {
+public class UserService {
 
-    @Override
+
     public UserDto getAllUsers(){
         UserDto userDto=new UserDto();
         userDto.setId(11);

@@ -1,25 +1,30 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.UserDatabaseDto;
-import com.example.demo.dto.UserDto;
-import com.example.demo.service.UserServices;
+import com.example.demo.service.impl.UserServices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
 
-   @Autowired
-   UserServices userService;
+    @Autowired
+    UserServices userService;
 
-    @RequestMapping("/users/database")
-    public ResponseEntity<Object> getUserController(){
-        UserDatabaseDto userDto = userService.getAllUsers();
-        System.out.println("Service Constructor : "+userService.hashCode());
+    @RequestMapping(value = "/v1/users/{id}", method = RequestMethod.GET)
+    public ResponseEntity<Object> getUser(@PathVariable("id") Integer id) {
+        UserDatabaseDto userDto = userService.getUserById(id);
+        System.out.println("Service Constructor: " + userService.hashCode());
         return ResponseEntity.ok(userDto);
+
+    }
+
+    @RequestMapping(value = "/v1/users", method = RequestMethod.POST)
+    public ResponseEntity<Object> createUser(@RequestBody UserDatabaseDto userDto) {
+        UserDatabaseDto userDtoReturn = userService.createUser(userDto);
+        return ResponseEntity.ok(userDtoReturn);
     }
 
 }
