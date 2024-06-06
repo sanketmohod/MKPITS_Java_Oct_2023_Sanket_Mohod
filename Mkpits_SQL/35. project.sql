@@ -1,0 +1,21 @@
+CREATE TABLE `database_tables`.`project` (
+  `project_id` INT NOT NULL AUTO_INCREMENT,
+  `project_name` VARCHAR(100) NOT NULL,
+  `start_date` DATE NOT NULL,
+  `end_date` DATE NOT NULL,
+  `budged` DECIMAL NULL,
+  `department_id` INT NULL,
+  `manager_id` INT NULL,
+  `description` TEXT NULL,
+  `status` VARCHAR(50) NULL,
+  `client_name` VARCHAR(50) NOT NULL,
+  `created_by` INT NULL,
+  `created_at` DATETIME NULL,
+  `updated_by` INT NULL,
+  `updated_at` DATETIME NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE INDEX `project_id_UNIQUE` (`project_id` ASC) VISIBLE,
+  UNIQUE INDEX `project_name_UNIQUE` (`project_name` ASC) VISIBLE,
+  UNIQUE INDEX `manager_id_UNIQUE` (`manager_id` ASC) VISIBLE,
+  UNIQUE INDEX `department_id_UNIQUE` (`department_id` ASC) VISIBLE);
+

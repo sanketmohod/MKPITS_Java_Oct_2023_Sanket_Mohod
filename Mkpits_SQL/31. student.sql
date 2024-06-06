@@ -1,0 +1,20 @@
+CREATE TABLE `database_tables`.`student` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(20) NOT NULL,
+  `middle_name` VARCHAR(20) NULL,
+  `last_name` VARCHAR(20) NOT NULL,
+  `age` INT NULL,
+  `mobile` VARCHAR(10) NULL,
+  `email` VARCHAR(45) NULL,
+  `address` VARCHAR(200) NULL,
+  `dob` DATE NULL,
+  `gender` CHAR(1) NOT NULL,
+  `created_by` INT NULL,
+  `created_at` DATETIME NULL,
+  `updated_by` INT NULL,
+  `updated_at` DATETIME NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  UNIQUE INDEX `mobile_UNIQUE` (`mobile` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
+
