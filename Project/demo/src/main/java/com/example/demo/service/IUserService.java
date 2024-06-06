@@ -1,13 +1,16 @@
 package com.example.demo.service;
 
 
-import com.example.demo.dto.UserDatabaseDto;
 import com.example.demo.dto.UserDto;
+
+import java.util.List;
 
 
 public interface IUserService {
 
-    public UserDatabaseDto getUserById(Integer id);
+    public UserDto getUserById(Integer id);
+    public List<UserDto> getAllUsers();
 
-    public UserDatabaseDto createUser(UserDatabaseDto userDto);
+    public UserDto updateUser(UserDto userDto);
+    public UserDto createUser(UserDto userDto);
 }
