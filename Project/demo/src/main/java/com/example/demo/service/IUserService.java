@@ -12,5 +12,8 @@ public interface IUserService {
     public List<UserDto> getAllUsers();
 
     public UserDto updateUser(UserDto userDto);
+
+    public UserDto updatePartialUser(UserDto userDto);
+
     public UserDto createUser(UserDto userDto);
 }
