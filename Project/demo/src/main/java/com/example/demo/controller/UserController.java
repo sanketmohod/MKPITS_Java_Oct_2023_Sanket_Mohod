@@ -28,8 +28,8 @@ public class UserController {
     @GetMapping(path = "/v1/users/{id}")
     public ResponseEntity<Object> getUser(@PathVariable("id") Integer id) {
         UserRequestDto userRequestDto = userService.getUserById(id);
-        boolean isNotFound = userValidator.validateMobile(userRequestDto.getMobile());
-        return ResponseEntity.ok(userRequestDto);
+        boolean isNotFound = userValidator.validateId(userRequestDto.getId());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(userRequestDto);
 
     }
 

@@ -25,8 +25,8 @@ public class UserRequestDto {
     @Size(min = 6, max = 45, message = "'username' can be minimum 6 character and maximum 45 characters")
     private String username;
     @NotNull(message = "'password' can not be null")
-    @Size(min = 6, max = 12, message = "'password' cam be minimum 6 character amd maximum 12 characters")
-    @Pattern(regexp ="^(?=.[A-Za-z])(?=.\\d)(?=.[@$!%#?&])[A-Za-z\\d@$!%*#?&]{8}$", message = "Min 1 uppercase letter. Min 1 lowercase letter.Min 1 special character.Min 1 number.Min 8 characters.")
+   // @Size(min = 6, max = 12, message = "'password' cam be minimum 6 character amd maximum 12 characters")
+    //@Pattern(regexp ="^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\\w\\d\\s:])([^\\s]){8,16}$\n")
     private String password;
     @NotNull(message = "'firstName' can not be null")
     @Size(max = 20, message = "'firstName' cam be maximum 20 characters")

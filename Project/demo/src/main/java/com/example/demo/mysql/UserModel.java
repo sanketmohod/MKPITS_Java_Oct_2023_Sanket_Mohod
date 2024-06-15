@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -17,14 +18,10 @@ import java.time.LocalDateTime;
 @Table(name = "users")
 public class UserModel {
 
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    @Id
     @Column(name = "id")
     private Integer id;
-
-//    @Column(name = "username")
-//    private String username;
 
     @Column(name = "first_name")
     private String firstName;
@@ -37,6 +34,9 @@ public class UserModel {
 
     @Column(name = "email")
     private String email;
+
+    @Column(name = "dob")
+    private LocalDate dateOfBirth;
 
     @Column(name = "created_by")
     private Integer createdBy;

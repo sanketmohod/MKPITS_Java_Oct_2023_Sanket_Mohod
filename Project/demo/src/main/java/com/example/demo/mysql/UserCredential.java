@@ -16,9 +16,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "user_credentials")
 public class UserCredential {
-
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "user_id")

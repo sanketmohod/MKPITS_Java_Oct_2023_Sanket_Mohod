@@ -22,5 +22,12 @@ public class UserValidator {
         }
 
     }
+    public boolean validateId(Integer id){
+        if(id == null){
+            throw new NotFoundException("Not found exception");
+        }else{
+            return  true;
+        }
+    }
 
 }

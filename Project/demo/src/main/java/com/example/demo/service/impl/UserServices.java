@@ -140,6 +140,7 @@ public class UserServices implements IUserService {
         user.setMobile(userRequestDto.getMobile());
         user.setEmail(userRequestDto.getEmail());
         user.setUpdatedBy(1);
+        user.setDateOfBirth(userRequestDto.getDateOfBirth());
         user.setUpdatedAt(LocalDateTime.now());
         return user;
     }
@@ -151,6 +152,7 @@ public class UserServices implements IUserService {
         userRequestDto.setLastName(user.getLastName());
         userRequestDto.setMobile(user.getMobile());
         userRequestDto.setEmail(user.getEmail());
+        userRequestDto.setDateOfBirth(user.getDateOfBirth());
         return userRequestDto;
     }
 }
