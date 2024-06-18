@@ -13,10 +13,10 @@ public class UserValidator {
         } else {
             LocalDate currentDate = LocalDate.now();
             int age = currentDate.getYear() - dateOfBirth.getYear();
-            if (age < 18) {
-                return false;
-            } else {
+            if (age >= 18) {
                 return true;
+            } else {
+                return false;
             }
         }
 

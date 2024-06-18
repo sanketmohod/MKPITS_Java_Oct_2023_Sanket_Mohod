@@ -1,10 +1,7 @@
 package com.example.bank.account.mysql;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.time.LocalDate;
@@ -14,6 +11,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "users")
 public class Users {
@@ -28,12 +26,12 @@ public class Users {
     private String middleName;
     @Column(name = "last_name")
     private String lastName;
+    @Column(name = "username")
+    private String username;
     @Column(name = "mobile")
     private String mobile;
     @Column(name = "email")
     private String email;
-    @Column(name = "aadhar_number")
-    private String aadharNumber;
     @Column(name = "gender")
     private String gender;
     @Column(name = "age")

@@ -2,10 +2,8 @@ package com.example.bank.account.dto.request;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -19,11 +17,14 @@ public class UserRequestDto {
     private Integer id;
     private String username;
     private String firstName;
+    private String accountHolder;
     private String lastName;
     private String mobile;
-    private String email;
     private Double balance;
-    private String accountNumber;
+    private Integer age;
+    private String email;
     private String gender;
+    private Double rateOfInterest;
+    private String accountType;
     private LocalDate dateOfBirth;
 }

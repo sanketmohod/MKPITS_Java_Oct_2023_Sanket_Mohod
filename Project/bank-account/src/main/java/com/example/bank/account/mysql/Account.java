@@ -1,10 +1,7 @@
 package com.example.bank.account.mysql;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -12,6 +9,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "account")
 public class Account {
@@ -21,12 +19,14 @@ public class Account {
     private Integer id;
     @Column(name = "customer_id")
     private Integer userId;
-    @Column(name = "username")
-    private String username;
+    @Column(name = "account_holder")
+    private String accountHolder;
     @Column(name = "account_type")
     private String accountType;
     @Column(name = "account_number")
     private String accountNumber;
+    @Column(name = "rate_of_interest")
+    private Double rateOfInterest;
     @Column(name = "balance")
     private Double balance;
     @Column(name = "created_by")
